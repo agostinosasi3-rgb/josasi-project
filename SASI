@@ -1,1 +1,31 @@
+# SIMPLE CALCULATOR CONVERSION
+print("UNIT CONVERSION")
+print("1. Length (meter to kilometer)")
+print("2. weight(kilogram to gram)")
+print("3. currency(Tsh to USD)")
+print("4. Temperature(celcius to fahrenheit)")
+choice = int(input("choose conversion (1-4): "))
+
+if choice == 1:
+    meter = float(int("Enter length in meter: "))
+    kilometer = meter/1000
+    print("length in kilometer is:",kilometer)
+
+elif choice == 2:
+    gram = float(input("enter weight in gram: "))
+    kilogram = gram/1000
+    print("the weight in kilogram is",kilogram)
+
+elif choice == 3:
+    Tsh = float(input("enter currency in Tsh: "))
+    USD = 2500*Tsh
+    print("enter the currency iin USD")
+
+elif choice == 4:
+    celcius = float(input("enter the temperature in celcius: ")) 
+    Fahrenheit = (celcius * 5/9) + 32
+    print("The temperature in fahrenheit is:",Fahrenheit)
+
+else:
+    print("invalid choice")
 
